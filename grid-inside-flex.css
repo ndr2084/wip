@@ -1,0 +1,193 @@
+html{ 
+    background-color: black;
+    margin-top: 0px;
+}
+
+ul, li{ list-style: none; padding: 0px;}
+.wrapper{ 
+    position: relative;
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        "head head head head head head head head head head head head"
+        ". . aside aside main main main main headings-nav headings-nav . .";
+    align-items: start;
+    gap: 2rem;
+    margin: auto;
+}
+
+.wrapper > *, footer{ 
+
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+header{ 
+    grid-area: head;
+    grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    position: sticky;
+    top:10px;
+    grid-template-areas: 
+     ". . image  center-nav center-nav center-nav center-nav center-nav bar logout . ." 
+     "path path path path path path path path path path path path";
+     background-color: black;
+
+}
+
+header img{ 
+    grid-area: image; 
+    margin-left: 5px;
+}
+
+header nav{ 
+    grid-area: center-nav;
+}
+
+header .search-bar{ 
+    grid-area: bar;
+    text-align: right;
+    margin: 0 auto;
+}
+
+header .logout{ 
+    grid-area: logout;
+}
+
+header .logout p{ 
+    text-align: right;
+    margin-right: 15px;
+}
+
+header .website-path{ 
+    grid-area: path;
+    display: grid;
+    padding-left: 16.8%;
+
+}
+
+
+
+.website-path{
+    grid-area: section; 
+    display: flex;
+    border: 0.01mm solid white;
+    font-size: 90%;
+    max-width: 5000px;
+}
+
+.website-path > p{ 
+    margin: 0%;
+    
+}
+
+header .search-bar{ 
+    text-align: right;
+}
+
+header img{ 
+    max-height: 50px;
+    max-width: 200px;
+}
+
+header .header-center{ 
+    display: flex;
+    justify-content: center;
+    
+}
+
+header .header-center li{ 
+    padding: 0 0.4em
+}
+
+header nav{ 
+    flex-grow: 0.9;
+    margin: 0em 3em 0em 3em;
+}
+
+
+aside{ 
+    grid-area: aside;
+    position: sticky;
+    top: 110px;
+    z-index: -1;
+}
+
+aside ul{
+    padding: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    
+}
+
+
+main{ 
+    grid-area: main; 
+}
+
+.headings-nav{
+    position: sticky;
+    top: 95px;
+    bottom: 95px;
+    z-index: -1;
+}
+
+.header-center{ 
+    list-style: none;
+}
+
+header .logout{ 
+    text-align: center;
+    flex-grow: 0.5;
+}
+
+
+footer{ 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "ad ad ad ad"
+        "pretty bottom-nav bottom-nav bottom-nav"
+        "other other other other";
+
+}
+
+footer > *{ 
+    background-color: aqua;
+}
+
+.headings-nav{
+    grid-area: headings-nav;
+}
+
+.headings-nav ul{ 
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+}
+
+.ad{ 
+    grid-area: ad;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.pretty{ 
+    grid-area: pretty;
+}
+
+.bottom-nav{ 
+    grid-area: bottom-nav;
+    display: flex;
+    justify-content: space-around;
+    padding: 0em 12em;
+}
+
+.other{
+    grid-area: other;
+    text-align: center;
+}
+
+
