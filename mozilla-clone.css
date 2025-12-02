@@ -30,10 +30,10 @@ header{
     position: sticky;
     top:0px;
     grid-template-areas: 
-     ". . image  center-nav center-nav center-nav center-nav center-nav bar logout . ." 
+     ". . image image center-nav center-nav center-nav  bar logout . . ." 
      "path path path path path path path path path path path path";
      background-color: black;
-     margin-top: -8px;
+     margin: -8px;
      padding: 0px;
 
 }
@@ -100,11 +100,11 @@ header .header-center{
 }
 
 header .header-center li{ 
-    padding: 0 0.4em
+    padding: 0.2em;
+    font-size: 0.85em;
 }
 
 header nav{ 
-    flex-grow: 0.9;
     margin: 0em 3em 0em 3em;
 }
 
@@ -136,9 +136,6 @@ main{
     z-index: -1;
 }
 
-.header-center{ 
-    list-style: none;
-}
 
 header .logout{ 
     text-align: center;
