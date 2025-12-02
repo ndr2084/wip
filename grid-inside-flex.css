@@ -1,6 +1,7 @@
 html{ 
     background-color: black;
-    margin-top: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 ul, li{ list-style: none; padding: 0px;}
@@ -13,13 +14,12 @@ ul, li{ list-style: none; padding: 0px;}
         ". . aside aside main main main main headings-nav headings-nav . .";
     align-items: start;
     gap: 2rem;
-    margin: auto;
+    margin: 0px auto;
+    padding: 0px auto;
 }
 
 .wrapper > *, footer{ 
 
-    border: 2px solid black;
-    border-radius: 5px;
     color: white;
 }
 
@@ -28,11 +28,13 @@ header{
     grid-template-columns: repeat(12, 1fr);
     display: grid;
     position: sticky;
-    top:10px;
+    top:0px;
     grid-template-areas: 
      ". . image  center-nav center-nav center-nav center-nav center-nav bar logout . ." 
      "path path path path path path path path path path path path";
      background-color: black;
+     margin-top: -8px;
+     padding: 0px;
 
 }
 
@@ -129,7 +131,7 @@ main{
 
 .headings-nav{
     position: sticky;
-    top: 95px;
+    top: 107px;
     bottom: 95px;
     z-index: -1;
 }
